@@ -1,0 +1,20 @@
+# ignore obj folders and bin folders
+/**/bin/
+/**/obj/
+
+# ignore "layout" and "depend" files
+*.layout
+*.depend
+
+# ignore "build.log" files
+build.log
+
+# ignore "deb" files
+*.deb
+
+# ignore third-party "build" folders
+/third-party/builds/
+
+# ignore documentation output folders
+/**/doc/html/
+/**/doc/latex/
