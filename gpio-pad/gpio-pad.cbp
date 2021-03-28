@@ -21,16 +21,26 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-O2" />
+					<Add option="-O3" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="pthread" />
 				</Linker>
 			</Target>
 		</Build>
 		<Compiler>
 			<Add option="-Wall" />
+			<Add option="-std=c++17" />
+			<Add directory="../third-party/rapidjson/include" />
 		</Compiler>
+		<Unit filename="common.cpp" />
+		<Unit filename="common.h" />
+		<Unit filename="gpio-pad.cpp" />
+		<Unit filename="interfaces/rpi_gpio.cpp" />
+		<Unit filename="interfaces/rpi_gpio.h" />
+		<Unit filename="pad_thread.cpp" />
+		<Unit filename="pad_thread.h" />
 		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
